@@ -87,10 +87,10 @@ namespace DDA
             switch (action)
             {
                 case SimAction.Gun:
-                    estimatedMaxDamage = 15; // 120% of ~12 base + variance
+                    estimatedMaxDamage = 15; // 100% of ~12 base + 3 interval
                     break;
                 case SimAction.Sword:
-                    estimatedMaxDamage = 10; // 80% of ~12 base + variance
+                    estimatedMaxDamage = 13; // 90% of ~12 base + 2 interval
                     break;
                 default:
                     estimatedMaxDamage = 4; // Punch

@@ -18,8 +18,8 @@ behaviors:
       learning_rate_schedule: constant
 
       # Experience Replay
-      batch_size: 64
-      buffer_size: 10000
+      batch_size: 128
+      buffer_size: 100000
 
       # DDQN - Target Network Update
       tau: 0.005 # Soft update rate
@@ -46,9 +46,9 @@ behaviors:
     # Training settings
 
     keep_checkpoints: 5
-    max_steps: 100000
+    max_steps: 300000
     time_horizon: 64
-    summary_freq: 20000
+    summary_freq: 10000
     checkpoint_interval: 50000
 
 # Environment settings
@@ -65,7 +65,7 @@ engine_settings:
   width: 84
   height: 84
   quality_level: 5
-  time_scale: 20
+  time_scale: 100
   target_frame_rate: -1
   capture_frame_rate: 60
   no_graphics: false

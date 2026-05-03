@@ -109,10 +109,10 @@ namespace DDA
             // Default action values from BaseAction assets
             PunchPercentage = 30;
             PunchInterval = 0;
-            SwordPercentage = 80;
-            SwordInterval = 0;
-            GunPercentage = 120;
-            GunInterval = 0;
+            SwordPercentage = 90;
+            SwordInterval = 2;
+            GunPercentage = 100;
+            GunInterval = 3;
             DefendMultiple = 3;
             DefendInterval = 6;
 
@@ -125,10 +125,10 @@ namespace DDA
             // Action percentages from BaseAction assets
             PunchPercentage = 30;
             PunchInterval = 0;
-            SwordPercentage = 80;
-            SwordInterval = 0;
-            GunPercentage = 120;
-            GunInterval = 0;
+            SwordPercentage = 90;
+            SwordInterval = 2;
+            GunPercentage = 100;
+            GunInterval = 3;
             DefendMultiple = 3;
             DefendInterval = 6;
 

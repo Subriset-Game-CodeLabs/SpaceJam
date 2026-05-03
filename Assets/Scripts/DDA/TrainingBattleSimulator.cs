@@ -395,6 +395,9 @@ namespace DDA
 
         private IEnumerator ProcessBattleArea(SimArea area)
         {
+            // Reset turn count for entire area (not per enemy)
+            _turnCount = 0;
+
             // Fight all enemies in sequence
             foreach (var enemy in area.Enemies)
             {
@@ -449,7 +452,7 @@ namespace DDA
         {
             _battleInProgress = true;
             _battleCount++;
-            _turnCount = 0;
+            // _turnCount reset at area level, not here
 
             // Notify DDA agent battle starting
             _ddaAgent?.OnBattleStart(_player.CurrentHP);
@@ -523,7 +526,7 @@ namespace DDA
         {
             _battleInProgress = true;
             _battleCount++;
-            _turnCount = 0;
+            // _turnCount reset at area level, not here
 
             _ddaAgent?.OnBattleStart(_player.CurrentHP);
 
